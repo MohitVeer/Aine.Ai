@@ -1,0 +1,212 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #f9f9f9;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h4 {
+  font-weight: bold;
+}
+
+/* Aside Bar */
+aside {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: #fff;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5);
+          box-shadow: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  padding: 15px;
+}
+
+aside .logo {
+  display: block;
+  position: relative;
+  width: 55px;
+  margin: 0 auto 0;
+}
+
+aside .footer-tab,
+aside .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+aside .footer-tab .tab-item,
+aside .tabs .tab-item {
+  height: 48px;
+  width: 48px;
+  padding: 8px;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside .footer-tab .tab-item img,
+aside .tabs .tab-item img {
+  display: block;
+  width: 24px;
+  margin: auto;
+}
+
+aside .footer-tab .active,
+aside .tabs .active {
+  background-color: #2216a1;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px rgba(17, 17, 17, 0.5);
+          box-shadow: 0 4px 8px rgba(17, 17, 17, 0.5);
+}
+
+aside .footer-tab .active img,
+aside .tabs .active img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+aside .tabs {
+  height: calc(100vh - 50px);
+}
+
+@media (max-width: 991px) {
+  aside {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    top: unset;
+    right: 0;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  aside .footer-tab,
+  aside .logo {
+    display: none;
+  }
+  aside .tabs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: initial;
+  }
+  aside .tabs .tab-item,
+  aside .tabs .search {
+    margin-bottom: 0;
+    margin: 0 0.5rem;
+  }
+  aside .tabs .tab-item {
+    width: 40px;
+    height: 40px;
+  }
+  aside .tabs .inner-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+}
+
+div.container {
+  margin-top: 9%;
+}
+
+div.container .main-text {
+  text-align: left;
+}
+
+div.container img {
+  width: 15px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  color: #f9f9f9;
+}
+
+div.container input {
+  margin-left: 13.5%;
+  width: 80%;
+  height: 50px;
+  border-style: none;
+  background-color: #fff;
+}
+
+div.container .temp {
+  margin-left: 48%;
+  font-size: 20px;
+}
+
+div.upload {
+  height: 100px;
+  width: 100px;
+  color: #4d4d4d;
+  background-color: white;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 22%;
+}
+
+main {
+  margin-left: 52px;
+}
+
+@media (max-width: 991px) {
+  main {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
